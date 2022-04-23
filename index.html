@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Phone UI</title>
+	<link rel="stylesheet" href="./style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="mobile">
+		<div class="top"></div>
+		<div class="bottom"></div>
+		<div class="screen">
+			<img src="./phone-bg.jpg">
+			<h2>10:40<span>AM</span><br><span>26th Jan, 2019</span></h2>
+			<ul>
+				<li><a href="https://youtube.com/codewithfrazix" target="_blank"><i class="fa fa-brands fa-youtube"
+							aria-hidden="true"></i></a></li>
+				<li><a href="https://github.com/Frazix12" target="_blank"><i class="fa fa-brands fa-github"
+							aria-hidden="true"></i></a></li>
+				<li><a href="https://discord.gg/ynWdPzqhdH" target="_blank"><i class="fa fa-brands fa-discord"
+							aria-hidden="true"></i></a></li>
+
+			</ul>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.bottom').click(function () {
+				$('.screen').toggleClass('active')
+			})
+		})
+	</script>
+
+</body>
+
+</html>
